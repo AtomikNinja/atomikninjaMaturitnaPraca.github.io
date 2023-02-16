@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body {
+    background: #f1f1f1;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole {
+    margin: 0 5em 0 5em;
+}
+
+section {
+    padding: 1em 5em;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    background-color: #cfc289;
+    margin: 4em 0 4em 0;
+}
+
+.sekciaAdmin a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.75em;
+    background: #fcd62f;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: 0 1em 0 1em;
+
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .pole {
+        margin: 0 2em 0 2em;
+    }
+
+    section {
+        padding: 1em 2em;
+    }
+
+    table,
+    th,
+    td {
+        margin: 2em 0 2em 0;
+    }
+
+    .sekciaAdmin a {
+        margin: 0.5em 0.5em 0 0.5em;
+        font-size: 1.25em;
+    }
+}

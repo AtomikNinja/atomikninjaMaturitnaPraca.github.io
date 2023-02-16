@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body {
+    background: #f1f1f1;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole {
+    margin: 0 5em 0 5em;
+}
+
+section {
+    padding: 1em 5em;
+}
+
+.sekciaNadpis {
+    text-align: center;
+    background: #fcd62f;
+    margin: 0;
+    padding: 0;
+}
+
+.nadpis h2 {
+    font-weight: bold;
+    font-size: 4em;
+    padding: 0.3em 0 0.3em 0;
+    margin: 0;
+}
+
+.sekciaInfo {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    padding: 1em 0;
+}
+
+.sekciaMenu {
+    text-align: center;
+    padding: 2em 0;
+    background: #aaa9a94b;
+}
+
+.sekciaMenu ul {
+    list-style-type: none;
+    display: flex;
+    place-content: space-between;
+    margin: 0 8.5em;
+}
+
+.sekciaMenu a button {
+    text-decoration: none;
+    color: black;
+    background: #fcd62f;
+    padding: 1.2em;
+    border-radius: 2em;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.sekciaMenu a button::before,
+.sekciaMenu a button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.sekciaMenu a button:hover {
+    box-shadow: 20px 20px 0px #f7ba36;
+    top: -5px;
+    left: -5px;
+}
+
+.sekciaMenu a button:hover {
+    color: #fcd62f;
+    background: black;
+}
+
+.sekciaObsah {
+    margin: 0;
+}
+
+.sekciaObsah .sekciaPolozky {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sekciaObsah .polozka {
+    background: #d3d3d34b;
+    text-align: center;
+    margin: 1em;
+
+}
+
+.sekciaObsah .polozka img {
+    width: 200px;
+    height: 180px;
+    padding: 0.5em;
+
+}
+
+.sekciaObsah .pole {
+    display: flex;
+}
+
+.sekciaObsah .polozka h5 {
+    padding: 0.5em;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.sekciaObsah .polozka p {
+    font-weight: bold;
+    color: red;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.sekciaKosik {
+    margin: 0;
+    background-color: white;
+    padding: 2em 0;
+}
+
+.sekciaKosik .kosikNadpis {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.sekciaKosik td {
+    font-size: 1.4em;
+}
+
+.sekciaKosik .minusPolozka {
+    margin-left: 10em;
+    border-radius: 1em;
+    background: #d3d3d34b;
+    cursor: pointer;
+}
+
+.sekciaKosik .polozkaPocet {
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 1em;
+}
+
+.sekciaKosik .plusPolozka {
+    border-radius: 1em;
+    background: #d3d3d34b;
+    cursor: pointer;
+}
+
+.sekciaKosik .vymazatPolozka {
+    border-radius: 1em;
+    background: #d3d3d34b;
+    cursor: pointer;
+    margin-right: 2em;
+}
+
+.sekciaKosik .cenaSpolu {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.sekciaKosik a {
+    text-decoration: none;
+    background: #fcd62f;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+
+.sekciaKosik a:hover {
+    background: black;
+    color: #fcd62f;
+}
+
+.sekciaPolozky a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.sekciaPolozky .polozka {
+    padding-bottom: 2em;
+}
+
+.sekciaPolozky h4 {
+    margin: 0;
+    font-size: 1.6em;
+}
+
+.sekciaPolozky .polozka-text {
+    padding-bottom: 1em;
+}
+
+.sekciaPolozky .pridatDoKosika {
+    background: #fcd62f;
+
+    padding: 1em;
+    border: 1px solid black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+.sekciaPolozky .pridatDoKosika:hover {
+    background: black;
+    color: #fcd62f;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .pole {
+        margin: 0 1em;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .sekciaNadpis {
+        padding: 1em;
+    }
+
+    .nadpis h2 {
+        font-size: 2.5em;
+        padding: 0.2em;
+    }
+
+    .sekciaInfo {
+        padding: 1em;
+    }
+
+    .sekciaObsah .polozka {
+        margin: 1em 0;
+    }
+
+    .sekciaObsah .polozka img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .sekciaObsah .polozka h5 {
+        font-size: 1.3em;
+    }
+
+    .sekciaObsah .polozka p {
+        font-size: 1.2em;
+    }
+
+    .sekciaMenu ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+
+    .sekciaKosik {
+        margin-left: 0;
+    }
+
+    .sekciaKosik .kosikNadpis {
+        font-size: 2em;
+    }
+
+    .sekciaKosik td {
+        font-size: 1.2em;
+    }
+
+    .sekciaKosik .minusPolozka {
+        margin-left: 1em;
+        font-size: 1.2em;
+    }
+
+    .sekciaKosik .polozkaPocet {
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 1.2em;
+    }
+
+    .sekciaKosik .plusPolozka {
+        font-size: 1.2em;
+    }
+
+    .sekciaKosik .vymazatPolozka {
+        font-size: 1.2em;
+        margin-right: 1em;
+    }
+
+    .sekciaKosik .cenaSpolu {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+
+    .sekciaKosik a {
+        font-size: 1.2em;
+        padding: 0.3em;
+    }
+
+    .sekciaPolozky .polozka {
+        padding-bottom: 1em;
+    }
+
+    .sekciaPolozky h4 {
+        font-size: 1.4em;
+    }
+
+    .sekciaPolozky .polozka-text {
+        padding-bottom: 1em;
+    }
+
+    .sekciaPolozky .pridatDoKosika {
+        font-size: 1.2em;
+        padding: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}

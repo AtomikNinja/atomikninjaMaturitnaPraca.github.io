@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body{
+    background: rgb(241, 241, 241);
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole{
+    margin: 0 5em 0 5em;
+}
+
+section{
+    padding: 1em 5em;
+}
+
+.sekciaKosik{
+    margin: 4em;
+    margin-bottom: 2em;
+    background-color: rgb(226, 224, 224);
+    border-radius: 2em;
+}
+
+.sekciaKosik .kosikNadpis{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5em;  
+  }
+
+.sekciaKosik table{
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.sekciaKosik table td{
+    font-size: 1.4em;
+}
+
+.sekciaKosik .nazovTd{
+    font-weight: bold;
+}
+
+/*.sekciaKosik .cenaTd{
+    
+}*/
+
+.sekciaKosik .minusPolozka{
+    margin-left: 8em;
+    border-radius: 1.5em;
+    background: #fcd62f;
+    cursor: pointer;
+}
+
+.sekciaKosik .polozkaPocet{
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 1em;
+    border: 1px black solid;
+    font-size: 20px;
+}
+
+.sekciaKosik .plusPolozka{
+    border-radius: 1.5em;
+    background: #fcd62f;
+    cursor: pointer;
+}
+
+.sekciaKosik .vymazatPolozka{
+    margin-right: 5em;
+    border-radius: 1.5em;
+    background: #fcd62f;
+    cursor: pointer;
+}
+
+/*.sekciaKosik .spoluTd{
+    
+}*/
+
+.sekciaKosik .cenaSpolu{
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 2em;
+}
+
+.sekciaKosik .resetovatKosik{
+    float: left;
+    padding: 1.5em;
+    background-color: #fcd62f;
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.sekciaKosik .resetovatKosik::before,
+.sekciaKosik .resetovatKosik::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.sekciaKosik .resetovatKosik:hover{
+    box-shadow: 10px 10px 0px #f7ba36;
+    top: -5px;
+    left: -5px;
+}
+
+.sekciaKosik form{
+    text-align: left;
+    display: block;
+}
+
+.sekciaKosik label{
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.sekciaKosik input, select{
+    margin-bottom: 1em;
+    width: 25%;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.sekciaKosik input[type="submit"]{
+    background: #fcd62f;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+    font-family: 'Lora', serif;
+    }
+    
+    .sekciaKosik {
+    margin: 2em;
+    margin-bottom: 1em;
+    }
+    
+    .sekciaKosik table {
+    font-size: 1em;
+    }
+    
+    .sekciaKosik .kosikNadpis {
+    font-size: 2em;
+    }
+    
+    .sekciaKosik .minusPolozka {
+    margin-left: 1em;
+    border-radius: 1em;
+    }
+    
+    .sekciaKosik .polozkaPocet {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 0.5em;
+    font-size: 16px;
+    }
+    
+    .sekciaKosik .plusPolozka {
+    border-radius: 1em;
+    }
+    
+    .sekciaKosik .vymazatPolozka {
+    margin-right: 2em;
+    border-radius: 1em;
+    }
+    
+    .sekciaKosik .cenaSpolu {
+    font-size: 1.5em;
+    }
+    
+    .sekciaKosik .resetovatKosik {
+    padding: 1em;
+    border-radius: 1.5em;
+    font-size: 1.2em;
+    }
+    
+    .sekciaKosik label {
+    font-size: 1.2em;
+    }
+    
+    .sekciaKosik input,
+    .sekciaKosik select {
+    width: 100%;
+    }
+    }
+
+
+
+
+

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-family: 'Mohave', sans-serif;
+}
+
+.pole {
+  margin: 0 5em 0 5em;
+}
+
+section {
+  padding: 1em 5em;
+}
+
+
+.sekciaNadpis {
+  text-align: center;
+  background: #fcd62f;
+  margin: 0;
+  padding: 0;
+}
+
+.nadpis h2 {
+  font-weight: bold;
+  font-size: 4em;
+  padding: 0.3em 0 0.3em 0;
+  margin: 0;
+}
+
+.sekciaMenu {
+  text-align: center;
+  padding: 2em 0;
+  background: #aaa9a94b;
+}
+
+.sekciaMenu ul {
+  list-style-type: none;
+  display: flex;
+  place-content: space-between;
+  margin: 0 8.5em;
+}
+
+.sekciaMenu a button {
+  text-decoration: none;
+  color: black;
+  background: #fcd62f;
+  padding: 0.5em;
+  border-radius: 2em;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+
+  position: relative;
+  border: none;
+  transition: .4s ease-in;
+  z-index: 1;
+}
+
+.sekciaMenu a button::before,
+.sekciaMenu a button::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+.sekciaMenu a button:hover {
+  box-shadow: 20px 20px 0px #f7ba36;
+  top: -5px;
+  left: -5px;
+}
+
+.sekciaMenu a button:hover {
+  color: #fcd62f;
+  background: black;
+}
+
+.sekciaProdukt {
+  margin: 0;
+  display: flex;
+}
+
+.sekciaProdukt img {
+  float: left;
+  margin: 3em 0 0 3em;
+  padding-right: 5em;
+
+  position: absolute;
+
+  width: 550px;
+}
+
+.sekciaProdukt .obsah {
+  margin-top: 3em;
+  margin-left: 40em;
+}
+
+.sekciaProdukt h3 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.sekciaProdukt #cena {
+  margin: 0;
+  color: red;
+  font-size: 2em;
+}
+
+.sekciaProdukt #popis {
+  margin-bottom: 1.5em;
+}
+
+.sekciaProdukt p{
+  padding: 1em 0;
+}
+
+.sekciaProdukt button {
+  background: #fcd62f;
+  padding: 0.3em;
+  border: 1px solid black;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 2em;
+
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sekciaProdukt button:hover {
+  background: black;
+  color: #fcd62f;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    background: #f1f1f1;
+  }
+
+  .pole {
+    margin: 0 2em 0 2em;
+  }
+
+  section {
+    padding: 1em 2em;
+  }
+
+  .sekciaMenu ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .sekciaProdukt img {
+    display: none;
+  }
+
+  .sekciaProdukt .obsah {
+    margin: 2em 1em 2em 1em;
+  }
+
+  .sekciaProdukt h3 {
+    font-size: 2em;
+  }
+
+  .sekciaProdukt #cena {
+    font-size: 1.5em;
+  }
+
+  .sekciaProdukt #popis {
+    margin-bottom: 1em;
+  }
+
+  .sekciaProdukt button {
+    font-size: 1.5em;
+    border-radius: 1em;
+  }
+}
+

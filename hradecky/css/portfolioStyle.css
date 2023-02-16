@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-family: 'Mohave', sans-serif;
+}
+
+.pole {
+  margin: 0 5em 0 5em;
+}
+
+section {
+  padding: 1em 5em;
+}
+
+.uvod {
+  color: black;
+  background: #fcd62f;
+  margin: 0 0 3em 0;
+}
+
+.uvod h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0.2em 0 0.2em 0;
+  margin: 0;
+}
+
+.uvod h3 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+.sekciaTemy {
+  margin: 0;
+  background:#f1f1f1;
+}
+
+.sekciaTemy .tema1 {
+  background-color: #d3d3d34b;   
+  text-align: center;
+  float: left;
+}
+
+.sekciaTemy .tema1:hover {
+  opacity: 80%;
+}
+
+.sekciaTemy .tema2 {
+  background-color: #d3d3d34b;   
+  text-align: center;
+  float: right;
+}
+
+.sekciaTemy .tema2:hover {
+  opacity: 80%;
+}
+
+.sekciaTemy .tema3 {
+  background-color: #d3d3d34b;   
+  text-align: center;
+  float: left;
+  margin-top: 1.5em;
+}
+
+.sekciaTemy .tema3:hover {
+  opacity: 80%;
+}
+
+.sekciaTemy .tema4 {
+  background-color: #d3d3d34b;   
+  text-align: center;
+  float: right;
+  margin-top: 1em;
+}
+
+.sekciaTemy .tema4:hover {
+  opacity: 80%;
+}
+
+.sekciaTemy h4 {
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0.2em 0 0.2em 0;
+  margin: 0;
+}
+
+img {
+  width: 450px;
+  height: 250px;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .pole {
+    margin: 0 2em 0 2em;
+  }
+  
+  section {
+    padding: 1em 2em;
+  }
+  
+  .uvod h2 {
+    font-size: 2.5em;
+  }
+  
+  .uvod h3 {
+    font-size: 1.5em;
+  }
+  
+  .sekciaTemy h4 {
+    font-size: 2.5em;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+}

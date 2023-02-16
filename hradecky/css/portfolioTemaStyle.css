@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body{
+    background: #f1f1f1;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole{
+    margin: 0 5em 0 5em;
+}
+
+section{
+    padding: 1em 5em;
+}
+
+.sekciaNavigacia{
+    background: #fcd62f;
+    padding: 1em 5em;
+}
+
+.sekciaNavigacia h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 0;
+}
+
+.sekciaNavigacia nav{
+    width: 100%;
+    display: flex;
+    padding-top: 0.5em;
+    place-content: space-between;
+}
+
+.sekciaNavigacia a{
+    text-decoration: none;
+    color: #fcd62f;
+    font-weight: bold;
+    font-size: 1.75em;
+    background: black;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: 0 1em 0 1em;
+
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.sekciaNavigacia a::before,
+.sekciaNavigacia a::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.sekciaNavigacia a::after{
+    height: 100%;
+    left: -40%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+
+    background-color: white;
+}
+
+.sekciaNavigacia a:hover::after{
+    height: 100%;
+    width: 140%;
+}
+
+.galeria .pole{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+article.polozka{
+    background: white;
+    width: 230px;
+    height: 230px;
+    margin: 0.3em;
+    border-radius: 1em;
+    position: relative;
+    transition: transform .2s;
+}
+
+article.polozka img{
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+}
+
+article.polozka p{
+    text-align: center;
+}
+
+article.polozka:hover{
+    opacity: 80%;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.polozkaFull{
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.336);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+
+    display: none;
+}
+
+.polozkaFull:hover{
+    cursor: pointer;
+}
+
+.polozkaFull img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    width: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+    .pole {
+    margin: 0 2em;
+    }
+    section {
+        padding: 1em 2em;
+    }
+    
+    .sekciaNavigacia {
+        padding: 1em 2em;
+    }
+    
+    .sekciaNavigacia h2 {
+        font-size: 2.5em;
+    }
+    
+    .sekciaNavigacia nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sekciaNavigacia a {
+        margin: 0.5em;
+    }
+    
+    .galeria .pole {
+        justify-content: center;
+    }
+    
+    article.polozka {
+        width: 150px;
+        height: 150px;
+        margin: 0.2em;
+    }
+    
+    article.polozka img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    
+    .polozkaFull img {
+        width: 80%;
+    }
+}    

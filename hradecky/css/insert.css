@@ -1,0 +1,52 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.75em;
+    background: #fcd62f;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: 5em 1em 0 1em;
+    
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+a::before,
+a::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+a:hover{
+    box-shadow: 10px 10px 0px #f7ba36;
+    top: -5px;
+    left: -5px;
+}
+
+a.objednanie{
+    background: black;
+    color: #fcd62f;
+    
+}
+
+a:hover{
+    color: #fcd62f;
+    background: black;
+}
+
+a.objednanie:hover{
+    color: black;
+    background: #fcd62f;
+}
+
+@media (max-width: 768px) {
+    a {
+      margin: 2em 1em 0 1em;
+      font-size: 1.5em;
+    }
+  }
+  

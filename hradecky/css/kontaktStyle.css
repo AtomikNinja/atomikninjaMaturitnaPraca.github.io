@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body{
+    background: rgb(241, 241, 241);
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole{
+    margin: 0 5em 0 5em;
+}
+
+section{
+    padding: 1em 5em;
+}
+
+.sekciaInfo {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.sekciaInfo h2{
+    font-weight: bold;
+    text-align: left;
+    font-size: 3.5em;
+}
+
+.sekciaInfo .lavyStlpec{
+    float: left;
+    background: rgb(231, 231, 231);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.sekciaInfo .lavyStlpec li{
+    padding-bottom: 4em;
+}
+
+.sekciaInfo .pravyStlpec{
+   float: right;
+   padding: 0 3em 5em 0;
+   display: flex;
+}
+
+.sekciaInfo .pravyStlpec h3{
+    font-weight: bold;
+    padding: 0;
+    font-size: 1.5em;
+    margin-right: 2em;
+}
+
+.sekciaInfo .lavyStlpec a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.75em;
+    background: #979797;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: 0 1em 0 1em;
+
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    body {
+    font-family: 'Lora', serif;
+    }
+    
+    .pole {
+    margin: 0;
+    }
+    
+    section {
+    padding: 1em;
+    }
+    
+    .sekciaInfo .lavyStlpec {
+    float: none;
+    margin-bottom: 2em;
+    border-radius: 0;
+    padding: 1em;
+    }
+    
+    .sekciaInfo .pravyStlpec {
+    float: none;
+    padding: 0;
+    display: block;
+    }
+    
+    .sekciaInfo .lavyStlpec a {
+    font-size: 1.25em;
+    margin: 0.5em 0;
+    }
+    }

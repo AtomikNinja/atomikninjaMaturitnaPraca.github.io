@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body {
+    background: rgb(241, 241, 241);
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole {
+    margin: 0 5em 0 5em;
+}
+
+section {
+    padding: 1em 5em;
+}
+
+.sekciaObjednanie {
+    margin: 0;
+
+}
+
+.sekciaObjednanie form {
+    text-align: center;
+}
+
+.sekciaObjednanie h2 {
+    font-weight: bold;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 0.2em 0 0.1em 0;
+}
+
+.sekciaObjednanie p {
+    font-size: 1.2em;
+}
+
+.sekciaObjednanie label {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.sekciaObjednanie input,
+select {
+    margin-bottom: 1em;
+    width: 25%;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.sekciaObjednanie input[type="submit"] {
+    background: #fcd62f;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+    body {
+        background: rgb(241, 241, 241);
+        margin: 0;
+        font-family: 'Lora', serif;
+        font-family: 'Mohave', sans-serif;
+    }
+
+    .pole {
+        margin: 0 2em 0 2em;
+    }
+
+    section {
+        padding: 1em 2em;
+    }
+
+    .sekciaObjednanie h2 {
+        font-size: 2.5em;
+    }
+
+    .sekciaObjednanie label {
+        font-size: 1.2em;
+    }
+
+    .sekciaObjednanie input,
+    select {
+        width: 100%;
+        padding: 0.6em;
+        border-radius: 0.5em;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+}

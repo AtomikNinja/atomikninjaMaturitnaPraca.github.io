@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body {
+    background: #f1f1f1;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole {
+    margin: 0 5em 0 5em;
+}
+
+section {
+    padding: 1em 5em;
+}
+
+.sekciaNadpis {
+    text-align: center;
+    background: #fcd62f;
+    margin: 0;
+}
+
+.nadpis h2 {
+    font-weight: bold;
+    font-size: 4em;
+    padding: 0.5em 0 0.5em 0;
+    margin: 0;
+}
+
+.nadpis h3 {
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.521);
+    padding: 0.1em 0 0.1em 0;
+    margin: 0;
+}
+
+.sekciaPopis {
+    text-align: center;
+    margin: 0;
+    background: #f1f1f1;
+}
+
+.sekciaPopis .popis {
+    margin: 0;
+    padding: 1em 3em 1em 3em;
+}
+
+.sekciaPonuka {
+    text-align: center;
+    margin: 6em 0 0 0;
+    background: #f1f1f1;
+}
+
+.sekciaPonuka ul {
+    list-style-type: none;
+    display: flex;
+    place-content: space-between;
+    margin: 0 8.5em;
+}
+
+.sekciaPonuka a button {
+    text-decoration: none;
+    color: black;
+    background: #fcd62f;
+    padding: 2em;
+    border-radius: 2em;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.sekciaPonuka a button::before,
+.sekciaPonuka a button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.sekciaPonuka a button:hover {
+    box-shadow: 20px 20px 0px #f7ba36;
+    top: -5px;
+    left: -5px;
+}
+
+.sekciaPonuka a button:hover {
+    color: #fcd62f;
+    background: black;
+}
+
+@media (max-width: 768px) {
+    body {
+    font-size: 16px;
+    }
+    .pole {
+        margin: 0;
+    }
+    
+    section {
+        padding: 1em;
+    }
+    
+    .nadpis h2 {
+        font-size: 2.5em;
+    }
+    
+    .nadpis h3 {
+        font-size: 1.5em;
+    }
+    
+    .sekciaPopis .popis {
+        padding: 1em;
+    }
+    
+    .sekciaPonuka {
+        margin: 3em 0;
+    }
+    
+    .sekciaPonuka ul {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sekciaPonuka a button{
+        margin-bottom: 1em;
+    }
+}    

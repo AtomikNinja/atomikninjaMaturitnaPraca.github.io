@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Mohave:wght@300;400;600;700&display=swap');
+
+body{
+    background: #f1f1f1;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Mohave', sans-serif;
+}
+
+.pole{
+    margin: 0 5em 0 5em;
+}
+
+.menu{
+    background: white;
+    padding: 1em 5em;
+}
+
+.menu .logo{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 3em;
+}
+
+.menu .logo span{
+    color: #fcd62f;
+}
+
+.menu .pole{
+    display: block;
+}
+
+.menu nav{
+    width: 100%;
+    display: flex;
+    padding-top: 1em;
+    place-content: space-between;
+}
+
+.menu .prvaLista{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu nav li a button{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: #fcd62f;
+    border-radius: 0.4em;
+    padding: 0.2em;
+    margin: 0 0.5em 0 0.5em;
+    
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.menu nav li a button::before,
+.menu nav li a button::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.menu nav li a button:hover{
+    box-shadow: 10px 10px 0px #f7ba36;
+    top: -5px;
+    left: -5px;
+    cursor: pointer;
+}
+
+nav li a button.objednanie{
+    background: black;
+    color: #fcd62f;
+    
+}
+
+nav li a button:hover{
+    color: #fcd62f;
+    background: black;
+}
+
+nav li a button.objednanie:hover{
+    color: black;
+    background: #fcd62f;
+}
+
+.menu .druhaLista{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .menu nav {
+    flex-direction: column;
+    align-items: center;
+    place-content: none;
+  }
+
+  .menu nav li a button {
+    font-size: 1.25em;
+    margin: 1.2em 1.2em;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+}
+
+@media screen and (max-width: 960px){
+    .menu .logo{
+        font-size: 1.2em;
+        
+    }
+}
